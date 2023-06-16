@@ -4,7 +4,7 @@ interface Intern {
     skills: string[];
 }
 
-enum Domain {
+declare enum Domain {
     Web = "Web",
     Connect = "Connect",
     Backend = "Backend",
@@ -14,12 +14,14 @@ interface Junior {
     name: string;
     age: number;
     skills: string[];
-    date_of_promotion: string;
+    date_of_promotion: Date;
     domain: Domain;
 }
 
-export interface Company {
+interface Company {
     Interns: Intern[];
     Juniors: Junior[];
     Country: string;
 }
+
+export { Company }
