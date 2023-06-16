@@ -14,7 +14,7 @@ interface Junior {
     name: string;
     age: number;
     skills: string[];
-    date_of_promotion: Date;
+    date_of_promotion: string;
     domain: Domain;
 }
 
