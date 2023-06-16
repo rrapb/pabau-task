@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript</title>
+    <style>
+        #checkboxContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 180px;
+            font-size: 20px;
+            margin-left: 150px;
+            font-weight: bold;
+        }
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 15px;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        #shuffleButton{
+            font-size: 15px;
+            background-color: lightblue;
+            border-radius: 10px
+        }
+        #showButton{
+            font-size: 15px;
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+        #changeButton{
+            font-size: 15px;
+            background-color: lightblue;
+            border-radius: 10px
+        }
+
+        #valuesSelected{
+            font-size:20px
+        }
+
+        form {
+            width: fit-content;
+            background-color: deepskyblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <form>
+        <div id="checkboxContainer">
+            <label><input type="checkbox" value="Internship">Internship</label>
+            <label><input type="checkbox" value="Pabau">Pabau</label>
+            <label><input type="checkbox" value="Employment">Employment</label>
+            <label><input type="checkbox" value="Career">Career</label>
+        </div>
+        <br>
+        <div class="button">
+            <button id="shuffleButton" type="button">Shuffle Values</button>
+            <button id="changeButton" type="button">Change Values</button>
+            <button id="showButton" type="button">Show selected values</button>
+        </div>
+    </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
